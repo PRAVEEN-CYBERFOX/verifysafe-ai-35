@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* VerifySafe AI - Deepfake Detection Platform Design System
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Deep security theme */
+    --background: 220 27% 4%;
+    --foreground: 220 9% 95%;
+
+    /* Card and surface colors */
+    --card: 220 23% 6%;
+    --card-foreground: 220 9% 95%;
+
+    --popover: 220 23% 6%;
+    --popover-foreground: 220 9% 95%;
+
+    /* Brand colors - Trust and security */
+    --primary: 200 95% 55%;
+    --primary-foreground: 220 27% 4%;
+    --primary-glow: 200 95% 65%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 9% 95%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 9% 60%;
+
+    --accent: 190 95% 50%;
+    --accent-foreground: 220 27% 4%;
+
+    /* Status colors */
+    --verified: 120 60% 50%;
+    --verified-foreground: 120 60% 15%;
+    --fake-detected: 0 75% 60%;
+    --fake-detected-foreground: 0 75% 15%;
+    --warning: 40 95% 55%;
+    --warning-foreground: 40 95% 15%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 220 9% 95%;
+
+    /* UI elements */
+    --border: 220 15% 15%;
+    --input: 220 15% 12%;
+    --ring: 200 95% 55%;
+
+    /* Design tokens */
+    --radius: 0.75rem;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-security: linear-gradient(135deg, hsl(220 23% 8%), hsl(220 15% 12%));
+    --gradient-verified: linear-gradient(135deg, hsl(120 60% 50%), hsl(140 60% 45%));
+    --gradient-fake: linear-gradient(135deg, hsl(0 75% 60%), hsl(15 75% 55%));
+    
+    /* Shadows and glows */
+    --shadow-security: 0 25px 50px -12px hsl(220 27% 4% / 0.5);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 10px 25px -8px hsl(220 27% 4% / 0.4);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom utility classes for the security theme */
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-security {
+    background: var(--gradient-security);
+  }
+  
+  .gradient-verified {
+    background: var(--gradient-verified);
+  }
+  
+  .gradient-fake {
+    background: var(--gradient-fake);
+  }
+  
+  .shadow-security {
+    box-shadow: var(--shadow-security);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  .glow-effect {
+    filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.5));
+  }
+}
