@@ -40,9 +40,6 @@ export const HeroSection = () => {
               <Button variant="hero" size="lg" className="text-lg px-8 py-6">
                 Start Detection
               </Button>
-              <Button variant="security" size="lg" className="text-lg px-8 py-6">
-                View Demo
-              </Button>
             </div>
 
             {/* Features Grid */}
@@ -61,7 +58,7 @@ export const HeroSection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Shield className="h-6 w-6 text-primary" />
-                <span className="text-sm">99.2% Accuracy</span>
+                <span className="text-sm">85% Accuracy</span>
               </div>
             </div>
           </div>
@@ -72,31 +69,7 @@ export const HeroSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="text-2xl font-bold text-verified">2.4M+</h3>
-                    <p className="text-muted-foreground">Content Verified</p>
-                  </div>
-                  <CheckCircle className="h-8 w-8 text-verified" />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="gradient-security border-border/50 shadow-card">
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold text-fake-detected">15.7K</h3>
-                    <p className="text-muted-foreground">Deepfakes Detected</p>
-                  </div>
-                  <AlertTriangle className="h-8 w-8 text-fake-detected" />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="gradient-security border-border/50 shadow-card">
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="text-2xl font-bold text-primary">99.2%</h3>
+                    <h3 className="text-2xl font-bold text-primary">85%</h3>
                     <p className="text-muted-foreground">Detection Accuracy</p>
                   </div>
                   <Shield className="h-8 w-8 text-primary" />
